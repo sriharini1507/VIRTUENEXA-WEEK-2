@@ -1,49 +1,78 @@
+:root {
+  --pastel-blue: #b3d9ff;
+  --pastel-pink: #ffd6e0;
+  --pastel-yellow: #fff3b0;
+  --pastel-green: #d2f8d2;
+  --soft-gray: #f2f2f2;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    background-color: #333;
-    padding: 1em;
-    text-align: center;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--soft-gray);
+  color: #333;
+}
+
+.navbar {
+  background-color: var(--pastel-blue);
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #333;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--pastel-yellow);
+}
+
+.container {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #444;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  font-size: 1em;
+}
+
+.faq-item {
+  background-color: var(--pastel-green);
+  margin-bottom: 15px;
+  padding: 1em;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.faq-item:hover {
+  background-color: var(--pastel-yellow);
+}
+
+@media (max-width: 600px) {
   .navbar a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+    display: block;
+    margin: 10px auto;
   }
-  
-  .container {
-    padding: 2em;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 0.8em;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .faq-item {
-    background-color: #f9f9f9;
-    margin-bottom: 15px;
-    padding: 1em;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-  }
-  
-  .faq-item:hover {
-    background-color: #e0e0e0;
-  }
-  
-  @media (max-width: 600px) {
-    .navbar a {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  
+}
