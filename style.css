@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .container {
+    padding: 2em;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .faq-item {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 1em;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  @media (max-width: 600px) {
+    .navbar a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
